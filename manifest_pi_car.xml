@@ -4,7 +4,7 @@
     <remote name="gitlab" fetch="https://gitlab.com/" />
 
     <!-- Settings app patch -->
-    <remove-project name="packages/apps/Car/Settings" />
+    <remove-project name="platform/packages/apps/Car/Settings" />
     <project
         name="raspberry-car-unit/App-Settings"
         path="packages/apps/Car/Settings"
