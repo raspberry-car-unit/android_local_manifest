@@ -4,7 +4,7 @@
     <remote name="gitlab" fetch="https://gitlab.com/" />
 
     <!-- Settings app patch -->
-    <project
+    <extend-project
         name="raspberry-car-unit/Car-Settings"
         path="packages/apps/Car/Settings"
         remote="github"
