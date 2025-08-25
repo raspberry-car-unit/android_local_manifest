@@ -23,7 +23,7 @@
     <!-- MindTheGApps -->
     <project
         name="MindTheGapps/vendor_gapps"
-        path="vendor/rpi_car_unit/gapps"
+        path="vendor/gapps"
         remote="gitlab"
         revision="baklava"
     />
@@ -33,6 +33,7 @@
         name="raspberry-car-unit/android_device_rpi5_car"
         path="device/rpi_car_unit/rpi5"
         remote="github"
+        revision="main"
     />
 
     <copyfile
