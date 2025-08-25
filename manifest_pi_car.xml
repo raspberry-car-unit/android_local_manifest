@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="https://github.com/" />
+    
+    <!-- Core / raspberry-vanilla -->
+    <include name="raspberry-vanilla/android_local_manifest/manifest_brcm_rpi.xml" remote="github" revision="android-16.0" />
+    <include name="raspberry-vanilla/android_local_manifest/remove_projects.xml" remote="github" revision="android-16.0" />
+
+    <!-- GPS driver -->
+    <project 
+        name="kconger/android-serial-gps-driver"
+        path="hardware/libhardware/modules/gps/serial_gps"
+        remote="github"
+        revision="master"
+    />
+
+</manifest>
