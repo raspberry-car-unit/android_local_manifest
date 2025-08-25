@@ -4,10 +4,12 @@
     <remote name="gitlab" fetch="https://gitlab.com/" />
 
     <!-- Settings app patch -->
-    <extend-project
-        name="raspberry-car-unit/Car-Settings"
+    <remove-project name="packages/apps/Car/Settings" />
+    <project
+        name="raspberry-car-unit/App-Settings"
         path="packages/apps/Car/Settings"
         remote="github"
+        revision="android16-raspberry-pi"
     />
     
     <!-- GPS driver -->
@@ -22,7 +24,7 @@
     <project
         name="MindTheGapps/vendor_gapps"
         path="vendor/rpi_car_unit/gapps"
-        rmeote="gitlab"
+        remote="gitlab"
         revision="baklava"
     />
 
