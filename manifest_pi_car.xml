@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="github" fetch="https://github.com/" />
+    <remote name="gitlab" fetch="https://gitlab.com/" />
+
+    <!-- Settings app patch -->
+    <project
+        name="raspberry-car-unit/Car-Settings"
+        path="packages/apps/Car/Settings"
+        remote="github"
+    />
     
     <!-- GPS driver -->
     <project 
-        name="kconger/android-serial-gps-driver"
-        path="hardware/libhardware/modules/gps/serial_gps"
+        name="emteria/hardware_generic_gps"
+        path="hardware/libhardware/modules/gps/hardware_generic_gps"
         remote="github"
-        revision="master"
+        revision="v14.0/master"
+    />
+
+    <!-- MindTheGApps -->
+    <project
+        name="MindTheGapps/vendor_gapps"
+        path="vendor/rpi_car_unit/gapps"
+        rmeote="gitlab"
+        revision="baklava"
+    />
+
+    <!-- Build target -->
+    <project
+        name="raspberry-car-unit/android_device_rpi5_car"
+        path="device/rpi_car_unit/rpi5"
+        remote="github"
+    />
+
+    <copyfile
+        src="device/brcm/rpi5/mkimg.sh"
+        dest="device/rpi_car_unit/rpi5/mkimg.sh"
+    />
+
+    <copyfile
+        src="device/brcm/rpi5/wrimg.sh"
+        dest="device/rpi_car_unit/rpi5/wrimg.sh"
     />
 
 </manifest>
