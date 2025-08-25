@@ -18,6 +18,8 @@ sudo apt-get install dosfstools e2fsprogs fdisk kpartx mtools rsync
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-16.0.0_r1 --depth=1
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-16.0/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-16.0/remove_projects.xml
 curl -o .repo/local_manifests/manifest_pi_car.xml -L https://raw.githubusercontent.com/raspberry-car-unit/android_local_manifest/master/manifest_pi_car.xml --create-dirs
 ```
 
